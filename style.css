@@ -1,0 +1,51 @@
+ol {
+    display: flex;
+    color: rgb(230, 251, 255);
+}
+ol li {
+    list-style-type: none;
+    margin: auto 15px auto 15px;
+}
+ol li:nth-child(5) {
+    margin-left: auto;
+}
+.menu {
+    background-color: rgb(35, 78, 143);
+}
+li img {
+    width: 40px;
+}
+span {
+    font-size: 18px;
+}
+.content img {
+    width: 90px;
+    float: left;
+    margin-right: 15px;
+}
+.data {
+    text-align: end;
+    color: gray;
+    margin-top: 6px;
+}
+.button input {
+    background-color: gray;
+    color: white;
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 5px;
+    padding: 2px;
+
+}
+.content {
+    border: 1px solid rgb(224, 222, 222);
+    padding: 10px;
+}
+h1 {text-align: center;}
+h2 {
+    text-align: center;
+}
+h5 {
+    float: left;
+    margin-top: 6px;
+}
