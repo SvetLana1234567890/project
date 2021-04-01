@@ -49,3 +49,11 @@ h5 {
     float: left;
     margin-top: 6px;
 }
+ul   {
+    display: grid;
+    grid-template-columns: 30% 15% 30%;
+}
+ul li {
+    list-style-type: none;
+}
+
