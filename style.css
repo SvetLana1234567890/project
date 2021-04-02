@@ -52,8 +52,13 @@ h5 {
 ul   {
     display: grid;
     grid-template-columns: 30% 15% 30%;
+    grid-column-gap: 20px;
 }
 ul li {
     list-style-type: none;
+}
+.right {
+    border: 1px solid rgb(224, 222, 222);
+    border-top-right-radius: ;
 }
 
