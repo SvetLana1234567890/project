@@ -1,6 +1,12 @@
 ol {
     display: flex;
-    color: rgb(230, 251, 255);
+}
+a {
+    color: white;
+}
+a:hover {
+    color: rgb(118, 161, 224);
+    text-decoration: none;
 }
 ol li {
     list-style-type: none;
@@ -11,6 +17,8 @@ ol li:nth-child(5) {
 }
 .menu {
     background-color: rgb(35, 78, 143);
+    height: 60px;
+    padding-top: 10px;
 }
 li img {
     width: 40px;
@@ -19,7 +27,7 @@ span {
     font-size: 18px;
 }
 .content img {
-    width: 90px;
+    width: 140px;
     float: left;
     margin-right: 15px;
 }
@@ -28,22 +36,32 @@ span {
     color: gray;
     margin-top: 6px;
 }
-.button input {
+ .button a {    
     background-color: gray;
     color: white;
     width: 100%;
     margin-top: 20px;
     border-radius: 5px;
-    padding: 2px;
-
+    padding: 10px;
+    text-align: center;
+    display: block;
+    text-decoration: none;
 }
+.button a:hover {
+    background-color: rgb(187, 187, 187);
+}
+
 .content {
     border: 1px solid rgb(224, 222, 222);
-    padding: 10px;
+    padding: 10px 15px;
 }
-h1 {text-align: center;}
+h1 {text-align: center;
+    border-bottom: 1px solid rgb(235, 232, 232);
+    padding-bottom: 15px;
+}
 h2 {
     text-align: center;
+    padding: 10px;
 }
 h5 {
     float: left;
@@ -54,17 +72,16 @@ ul   {
     grid-template-columns: 30% 15% 30%;
     grid-column-gap: 40px;
     padding: 0px;
+    margin: 0px;
 }
 ul li {
     list-style-type: none;
+    margin-top: 10px;
 }
 .right {
-    margin: 10px;
     text-align: end;
 }
-.left {
-    margin: 10px;
-}
+
 .attended {
     border: 1px solid rgb(224, 222, 222);
     padding: 5px 10px;
@@ -76,12 +93,27 @@ ul li {
 .right::after, .right::before {
     content: '';
     position: absolute;
-    right: 365px;
+    right: 355px;
     margin-top: -5px;
     border: 18px solid transparent;
     border-left: 20px solid rgb(224, 222, 222);
 }
 .right::after {
     border-left: 20px solid white;
-    right: 367px;
+    right: 357px;
+}
+.left::after, .left::before {
+    content: '';
+    position: absolute;
+    right: 232px;
+    margin-top: -5px;
+    border: 18px solid transparent;
+    border-right: 20px solid rgb(224, 222, 222);
+}
+.left::after {
+    border-right: 20px solid white;
+    right: 230px;
+}
+.bolt {
+    font-weight: bold;
 }
