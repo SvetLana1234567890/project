@@ -23,7 +23,7 @@ span {
     float: left;
     margin-right: 15px;
 }
-.data {
+.ago {
     text-align: end;
     color: gray;
     margin-top: 6px;
@@ -52,13 +52,36 @@ h5 {
 ul   {
     display: grid;
     grid-template-columns: 30% 15% 30%;
-    grid-column-gap: 20px;
+    grid-column-gap: 40px;
+    padding: 0px;
 }
 ul li {
     list-style-type: none;
 }
 .right {
-    border: 1px solid rgb(224, 222, 222);
-    border-top-right-radius: ;
+    margin: 10px;
+    text-align: end;
 }
-
+.left {
+    margin: 10px;
+}
+.attended {
+    border: 1px solid rgb(224, 222, 222);
+    padding: 5px 10px;
+}
+.data {
+    border: 1px solid rgb(224, 222, 222);
+    padding: 5px 10px;
+}
+.right::after, .right::before {
+    content: '';
+    position: absolute;
+    right: 365px;
+    margin-top: -5px;
+    border: 18px solid transparent;
+    border-left: 20px solid rgb(224, 222, 222);
+}
+.right::after {
+    border-left: 20px solid white;
+    right: 367px;
+}
